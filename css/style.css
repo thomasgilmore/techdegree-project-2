@@ -1,0 +1,32 @@
+@media (min-width: 320px) {
+    .heading {
+        text-align: center;
+    }
+    .nav {
+
+    }
+    .profileimage img {
+        width: 60%;
+    }
+    .sectiontitle {
+        text-align: center;
+    }
+    .titleofproject {
+        text-align: center;
+    }
+    .pictureofproject {
+        width: 75%;
+    }
+}
+
+@media (min-width: 768px) {
+    .heading {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .heading {
+        text-align: left;
+    }
+}
