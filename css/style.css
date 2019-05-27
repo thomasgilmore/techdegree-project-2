@@ -179,7 +179,8 @@
     }
 
     .bottomnav {
-        display: block;
+        float: right;
+        display: inline-block;
         padding: 12px;
         text-decoration: none;
     }
