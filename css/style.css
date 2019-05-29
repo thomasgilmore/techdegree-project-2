@@ -1,306 +1,325 @@
-@media (min-width: 320px) {
-    h1 {
-        text-align: center;
-    }
-
-    nav a {
-        background-color: white;
-        display: block;
-        padding: 12px;
-        text-decoration: none;
-    }
-
-    ul {
-        list-style-type: none;
-        text-align: center;
-    }
-
-    nav li {
-        font-size: 1.2em;
-        line-height: 40px;
-        height: 40px;
-        border-bottom: 1px solid #888;
-    }
-    
-    .container1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /* #profilepicture {
-
-    } */
-
-    #intro {
-        margin: 15px 35px 15px 35px;
-        text-align: center;
-    }
-    
-    .container2 {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-    }
-    
-    img {
-        width: 400px;
-        height: 250px;
-    }
-
-    .sectiontitle {
-        text-align: center;
-    }
-
-    p {
-        margin: 5px 35px 30px 35px;
-    }
-
-    .contactinfo {
-        text-align: center;
-    }
-
-    /* .container3 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    } */
-
-    .studentname {
-        float: left;
-        /* text-align: left;
-        display: inline; */
-    }
-
-    .backtotop {
-        float: right;
-        /* text-align: right; 
-        justify-content: right;
-        display: inline; */
-    }
-    
-    .bottomnav {
-        display: none;
-    }
-}
-
-@media (min-width: 768px) {
-    h1 {
-        text-align: center;
-    }
-
-    nav a {
-        background-color: white;
-        display: block;
-        padding: 12px;
-        text-decoration: none;
-    }
-
-    ul {
-        list-style-type: none;
-        text-align: center;
-    }
-
-    nav li {
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  @media (min-width: 320px) {
+      h1 {
+          text-align: center;
+      }
+  
+      nav a {
+          background-color: white;
+          display: block;
+          padding: 0;
+          text-decoration: none;
+      }
+  
+      ul {
+          list-style-type: none;
+          text-align: center;
+          margin: 1em;
+          padding: 0;
+      }
+  
+      nav li {
+          font-size: 1.2em;
+          line-height: 40px;
+          height: 40px;
+      }
+      
+      .container1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+      }
+  
+      #intro {
+          margin: 15px 35px 15px 35px;
+          text-align: center;
+      }
+      
+      .container2 {
+          display: flex;
+          flex-wrap: wrap;
+          text-align: center;
+      }
+      
+      img {
+          width: 400px;
+          height: 250px;
+      }
+  
+      .sectiontitle {
+          text-align: center;
+      }
+  
+      p {
+          margin: 5px 35px 30px 35px;
+      }
+  
+      .contactinfo {
+          text-align: center;
+      }
+  
+      .container3 {
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: row;
+          justify-content: space-between;
+      }
+  
+      .studentname {
+          display: inline-block;
+          margin-left: 1em;
+      }
+  
+      .backtotop {
+          display: inline-block;
+      }
+      
+      .bottomnav {
+          display: none;
+      }
+  
+      .container4 {
+        display:none;
+      }
+  }
+  
+  @media (min-width: 768px) {
+      h1 {
+          text-align: center;
+      }
+  
+      nav a {
+          background-color: white;
+          display: block;
+          padding: 0;
+          margin: 0 20px;
+          text-decoration: none;
+      }
+  
+      ul {
+          list-style-type: none;
+          text-align: center;
+          margin: 1em;
+          padding: 0;
+      }
+  
+      nav li {
+          display: inline-block;
+      }
+      
+      .container1 {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: center;
+          align-items: center;
+      }
+  
+      .container1 > img {
+          margin-right: 1em;
+      }
+  
+      #profilepicture {
+          flex: 1 0 0;
+      }
+  
+      #intro {
+          flex: 2 0 0;
+          margin: 15px 35px 15px 35px;
+          text-align: left;
+          align-self: flex-start;
+          font-size: 1.2em;
+      }
+      
+      .container2 {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          text-align: center;
+      }
+  
+      /*section {
+          width: 49%;
+          /* margin: 10px;
+          font-size: 60px;
+          font-weight: bold;
+          text-align: center; 
+          /* padding: 15px; 
+      } */
+      
+      img {
+          width: 400px;
+          height: 250px;
+      }
+  
+      .sectiontitle {
+          text-align: center;
+      }
+  
+      p {
+          margin: 5px 5px 30px 5px;
+      }
+  
+      .contactinfo {
+          text-align: center;
+      }
+  
+      .container3 {
+          display: none;
+  /*        flex-direction: row;*/
+      }
+  
+      .studentname {
         display: inline-block;
-    }
-    
-    .container1 {
+        margin-left: 1em;
+      }
+      
+      .backtotop {
+          display: none;
+      }
+  
+      .bottomnav {
+          display: inline-block;
+          text-decoration: none;
+      }
+  
+      .bottomnav ul {
+          list-style-type: none;
+          text-align: center;
+          margin: 0;
+          padding: 0;
+      }
+  
+      .bottomnav li {
+          display: inline-block;
+      }
+      
+      .container4 {
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container1 > img {
-        margin-right: 1em;
-    }
-
-    #profilepicture {
-        flex: 1 0 0;
-    }
-
-    #intro {
-        flex: 2 0 0;
-        margin: 15px 35px 15px 35px;
-        text-align: left;
-        align-self: flex-start;
-        font-size: 1.2em;
-    }
-    
-    .container2 {
-        display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
-        text-align: center;
-    }
-
-    section {
-        width: 49%;
-        /* margin: 10px;
-        font-size: 60px;
-        font-weight: bold; */
-        text-align: center; 
-        /* padding: 15px; */
-    }
-    
-    img {
-        width: 400px;
-        height: 250px;
-    }
-
-    .sectiontitle {
-        text-align: center;
-    }
-
-    p {
-        margin: 5px 5px 30px 5px;
-    }
-
-    .contactinfo {
-        text-align: center;
-    }
-
-    /* .container3 {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        border-top: 1px solid gray;
+      }
+  }
+  
+  @media (min-width: 1024px) {
+      h1 {
+          text-align: left;
+          margin-left: 50px;
+      }
+  
+      nav a {
+          background-color: white;
+          display: inline-block;
+          padding: 0;
+          text-decoration: none;
+      }
+  
+      ul {
+          list-style-type: none;
+          text-align: center;
+          margin: 1em;
+          padding: 0;
+      }
+  
+      nav li {
+          display: inline-block;
+          margin-right: 1em;
+      }
+  
+      .container0 {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: nowrap;
+         justify-content: space-between;
+      }
+      
+      .container1 {
+          display: flex;
+          flex-direction: row-reverse;
+          justify-content: center;
+          align-items: center;
+      }
+  
+      .container1 > img {
+          margin-right: 1em;
+      }
+  
+      #profilepicture {
+          flex: 1 0 0;
+          max-width: 400px;
+          max-height: 250px;
+      }
+  
+      #intro {
+          flex: 2 0 0;
+          margin: 15px 35px 15px 35px;
+          text-align: left;
+          align-self: flex-start;
+          font-size: 1.2em;
+      }
+      
+      .container2 {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          text-align: center;
+      }
+  
+      section {
+          width: 33.333333%;
+          /* margin: 10px;
+          font-size: 60px;
+          font-weight: bold; */
+          text-align: center; 
+          /* padding: 15px; */
+      }
+      
+      img {
+          width: 400px;
+          height: 250px;
+      }
+  
+      .sectiontitle {
+          text-align: center;
+      }
+  
+      p {
+          margin: 5px 5px 30px 5px;
+      }
+  
+      .contactinfo {
+          text-align: center;
+      }
+  
+      .container3 {
+          display: none;
+  /*
+          flex-direction: row;
+          flex-wrap: nowrap;
+  */
+      }
+  
+      .studentname {
+          display: inline-block;
+          margin-left: -4em;
+      }
+      
+      .backtotop {
+          display: none;
+      }
+  
+      .container4 {
         display: flex;
-        flex-wrap: wrap;
-    }
-    } */
-
-    .studentname {
-        float: left;
-        /* text-align: left;
-        display: inline; */
-    }
-    
-    .backtotop {
-        display: none;
-    }
-
-    .bottomnav {
-        float: right;
-        display: inline-block;
-        padding: 12px;
-        text-decoration: none;
-    }
-
-    .bottomnav ul {
-        list-style-type: none;
-        text-align: center;
-    }
-
-    .bottomnav li {
-        display: inline-block;
-    }
-}
-
-@media (min-width: 1024px) {
-    h1 {
-        text-align: center;
-    }
-
-    nav a {
-        background-color: white;
-        display: block;
-        padding: 12px;
-        text-decoration: none;
-    }
-
-    ul {
-        list-style-type: none;
-        text-align: center;
-    }
-
-    nav li {
-        display: inline-block;
-    }
-    
-    .container1 {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .container1 > img {
-        margin-right: 1em;
-    }
-
-    #profilepicture {
-        flex: 1 0 0;
-    }
-
-    #intro {
-        flex: 2 0 0;
-        margin: 15px 35px 15px 35px;
-        text-align: left;
-        align-self: flex-start;
-        font-size: 1.2em;
-    }
-    
-    .container2 {
-        display: flex;
-        flex-wrap: wrap;
         flex-direction: row;
-        text-align: center;
-    }
-
-    section {
-        width: 33.333333%;
-        /* margin: 10px;
-        font-size: 60px;
-        font-weight: bold; */
-        text-align: center; 
-        /* padding: 15px; */
-    }
-    
-    img {
-        width: 400px;
-        height: 250px;
-    }
-
-    .sectiontitle {
-        text-align: center;
-    }
-
-    p {
-        margin: 5px 5px 30px 5px;
-    }
-
-    .contactinfo {
-        text-align: center;
-    }
-
-    /* .container3 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    } */
-
-    .studentname {
-        float: left;
-        /* text-align: left;
-        display: inline; */
-    }
-    
-    .backtotop {
-        display: none;
-    }
-
-    nav a {
-        background-color: white;
-        display: block;
-        padding: 12px;
-        text-decoration: none;
-    }
-
-    ul {
-        list-style-type: none;
-        text-align: center;
-    }
-
-    nav li {
-        display: inline-block;
-    }
-}
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        border-top: 1px solid gray;
+      }
+  
+  }
