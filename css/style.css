@@ -137,6 +137,7 @@ p {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        border-bottom: 1px solid black;
      }  
     
     h1 {
