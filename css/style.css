@@ -1,24 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Martel:900|Source+Serif+Pro&display=swap');
+
 body {
     margin: 0;
     padding: 0;
   }
+
+h1, 
+h2, 
+h3,
+h4 {
+  font-family: 'Martel', serif;
+}
+
+p {
+  font-family: 'Source Serif Pro', serif;
+}
+
+.gray {
+  background-color: #CBCBCB;
+}
   
   @media (min-width: 320px) {
-      h1 {
+    .container0 {
+        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 1px;
+     }  
+
+    h1 {
           text-align: center;
+          margin-bottom: 0;
       }
   
       nav a {
-          background-color: white;
+          background-color: #CBCBCB;
+          color: black;
           display: block;
           padding: 0;
           text-decoration: none;
+          font-size: 1.1em;
       }
   
       ul {
           list-style-type: none;
           text-align: center;
-          margin: 1em;
+          margin: 0;
           padding: 0;
       }
   
@@ -26,6 +54,7 @@ body {
           font-size: 1.2em;
           line-height: 40px;
           height: 40px;
+          border: 1px solid black;
       }
       
       .container1 {
@@ -49,6 +78,7 @@ body {
       img {
           width: 400px;
           height: 250px;
+          margin-top: 15px;
       }
   
       .sectiontitle {
@@ -73,11 +103,13 @@ body {
       .studentname {
           display: inline-block;
           margin-left: 1em;
+          margin-top: 1em;
       }
   
       .backtotop {
           display: inline-block;
           margin-right: 1em;
+          margin-top: 1em;
       }
       
       .bottomnav {
@@ -87,19 +119,40 @@ body {
       .container4 {
         display:none;
       }
+
+      .about {
+         text-align: center;
+       }
+
+      .aboutme {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        }
+
   }
   
   @media (min-width: 768px) {
-      h1 {
+    .container0 {
+        display: block;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+     }  
+    
+    h1 {
           text-align: center;
+          margin-bottom: 0;
       }
   
       nav a {
-          background-color: white;
+          background-color: #CBCBCB;
+          color: black;
           display: block;
-          padding: 0;
+          padding-left: 10px;
+          padding-right: 10px;
           margin: 0 20px;
           text-decoration: none;
+          font-size: 1em;
       }
   
       ul {
@@ -111,6 +164,7 @@ body {
   
       nav li {
           display: inline-block;
+          border: none;
       }
       
       .container1 {
@@ -150,6 +204,7 @@ body {
       img {
           width: 400px;
           height: 250px;
+          margin-top: 5px;
       }
   
       .sectiontitle {
@@ -171,6 +226,7 @@ body {
       .studentname {
         display: inline-block;
         margin-left: 1em;
+        margin-top: 1em;
       }
       
       .backtotop {
@@ -192,6 +248,12 @@ body {
       .bottomnav li {
           display: inline-block;
       }
+
+      .bottomnav a {
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+       }
       
       .container4 {
         display: flex;
@@ -200,19 +262,28 @@ body {
         justify-content: space-between;
         border-top: 1px solid gray;
       }
+
+      .about {
+         text-align: center;
+         margin: 1.2em;
+       }
   }
   
   @media (min-width: 1024px) {
       h1 {
           text-align: left;
           margin-left: 50px;
+          margin-bottom: 0;
       }
   
       nav a {
-          background-color: white;
+          background-color: #CBCBCB;
+          color: black;
           display: inline-block;
-          padding: 0;
+          padding-left: 10px;
+          padding-right: 10px;
           text-decoration: none;
+          font-size: 1em;
       }
   
       ul {
@@ -225,6 +296,7 @@ body {
       nav li {
           display: inline-block;
           margin-right: 1em;
+          border: none;
       }
   
       .container0 {
@@ -253,7 +325,7 @@ body {
   
       #intro {
           flex: 2 0 0;
-          margin: 15px 35px 15px 35px;
+          margin: 20px 40px 20px 75px;
           text-align: left;
           align-self: flex-start;
           font-size: 1.2em;
@@ -274,6 +346,7 @@ body {
       img {
           width: 400px;
           height: 250px;
+          margin-top: 10px;
       }
   
       .sectiontitle {
@@ -294,12 +367,19 @@ body {
   
       .studentname {
           display: inline-block;
-          margin-left: -4em;
+          margin-left: 1em;
+          margin-top: 1em;
       }
       
       .backtotop {
           display: none;
       }
+
+       .bottomnav a {
+        margin-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+       }
   
       .container4 {
         display: flex;
